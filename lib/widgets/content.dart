@@ -8,7 +8,9 @@ class GameContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Center(child: Text(Config.name))),
+      appBar: AppBar(
+          title: const Center(
+              child: Text(Config.name, style: TextStyle(fontSize: 25)))),
       body: const GameBox(),
     );
   }
